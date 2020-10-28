@@ -1,0 +1,21 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { IonicNativePlugin, cordova } from '@ionic-native/core';
+var Uptime = /** @class */ (function (_super) {
+    __extends(Uptime, _super);
+    function Uptime() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Uptime.prototype.getUptime = function (includeDeepSleep) { return cordova(this, "getUptime", {}, arguments); };
+    Uptime.pluginName = "Uptime";
+    Uptime.plugin = "cordova-plugin-uptime";
+    Uptime.pluginRef = "Uptime";
+    Uptime.repo = "https://github.com/s1lviu/cordova-plugin-uptime";
+    Uptime.platforms = ["Android", "iOS"];
+    Uptime = __decorate([
+        Injectable()
+    ], Uptime);
+    return Uptime;
+}(IonicNativePlugin));
+export { Uptime };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGlvbmljLW5hdGl2ZS9wbHVnaW5zL3VwdGltZS9uZ3gvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDM0MsT0FBTyw4QkFBc0MsTUFBTSxvQkFBb0IsQ0FBQzs7SUE2QjVDLDBCQUFpQjs7OztJQU8zQywwQkFBUyxhQUFDLGdCQUF5Qjs7Ozs7O0lBUHhCLE1BQU07UUFEbEIsVUFBVSxFQUFFO09BQ0EsTUFBTTtpQkE5Qm5CO0VBOEI0QixpQkFBaUI7U0FBaEMsTUFBTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgQ29yZG92YSwgSW9uaWNOYXRpdmVQbHVnaW4sIFBsdWdpbiB9IGZyb20gJ0Bpb25pYy1uYXRpdmUvY29yZSc7XHJcblxyXG4vKipcclxuICogQG5hbWUgVXB0aW1lXHJcbiAqIEBkZXNjcmlwdGlvblxyXG4gKiBUaGlzIHBsdWdpbiBwcm92aWRlcyB0aGUgdGltZSBzcGVudCBpbiBtaWxsaXNlY29uZHMgc2luY2UgYm9vdCAodXB0aW1lKS5cclxuICpcclxuICogQHVzYWdlXHJcbiAqIGBgYHR5cGVzY3JpcHRcclxuICogaW1wb3J0IHsgVXB0aW1lIH0gZnJvbSAnQGlvbmljLW5hdGl2ZS91cHRpbWUvbmd4JztcclxuICpcclxuICogY29uc3RydWN0b3IocHJpdmF0ZSB1cHRpbWU6IFVwdGltZSkgeyB9XHJcbiAqXHJcbiAqIC4uLlxyXG4gKlxyXG4gKiB0aGlzLnVwdGltZS5nZXRVcHRpbWUoaW5jbHVkZURlZXBTbGVlcClcclxuICogICAudGhlbih1cHRpbWUgPT4gY29uc29sZS5sb2codXB0aW1lKSlcclxuICogICAuY2F0Y2goZXJyb3IgPT4gY29uc29sZS5sb2coZXJyb3IpKTtcclxuICpcclxuICogYGBgXHJcbiAqL1xyXG5AUGx1Z2luKHtcclxuICBwbHVnaW5OYW1lOiAnVXB0aW1lJyxcclxuICBwbHVnaW46ICdjb3Jkb3ZhLXBsdWdpbi11cHRpbWUnLFxyXG4gIHBsdWdpblJlZjogJ1VwdGltZScsXHJcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9zMWx2aXUvY29yZG92YS1wbHVnaW4tdXB0aW1lJyxcclxuICBwbGF0Zm9ybXM6IFsnQW5kcm9pZCcsICdpT1MnXSxcclxufSlcclxuQEluamVjdGFibGUoKVxyXG5leHBvcnQgY2xhc3MgVXB0aW1lIGV4dGVuZHMgSW9uaWNOYXRpdmVQbHVnaW4ge1xyXG4gIC8qKlxyXG4gICAqIFRoaXMgZnVuY3Rpb24gcmV0dXJuIHN5c3RlbSB1cHRpbWVcclxuICAgKiBAcGFyYW0ge2Jvb2xlYW59IGluY2x1ZGVEZWVwU2xlZXAgU2V0IHRvIHRydWUgdG8gaW5jbHVkZSBzeXN0ZW0gZGVlcCBzbGVlcFxyXG4gICAqIEByZXR1cm4ge1Byb21pc2U8c3RyaW5nPn0gUmV0dXJucyBhIHByb21pc2UgdGhhdCByZXR1cm4gdGhlIHVwdGltZSBpbiBtaWxsaXNlY29uZHNcclxuICAgKi9cclxuICBAQ29yZG92YSgpXHJcbiAgZ2V0VXB0aW1lKGluY2x1ZGVEZWVwU2xlZXA6IGJvb2xlYW4pOiBQcm9taXNlPHN0cmluZz4ge1xyXG4gICAgcmV0dXJuO1xyXG4gIH1cclxufVxyXG4iXX0=

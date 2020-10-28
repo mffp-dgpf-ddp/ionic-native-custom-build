@@ -1,0 +1,23 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { IonicNativePlugin, cordova } from '@ionic-native/core';
+var CallLog = /** @class */ (function (_super) {
+    __extends(CallLog, _super);
+    function CallLog() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    CallLog.prototype.getCallLog = function (filters) { return cordova(this, "getCallLog", {}, arguments); };
+    CallLog.prototype.hasReadPermission = function () { return cordova(this, "hasReadPermission", { "platforms": ["Android"] }, arguments); };
+    CallLog.prototype.requestReadPermission = function () { return cordova(this, "requestReadPermission", { "platforms": ["Android"] }, arguments); };
+    CallLog.pluginName = "CallLog";
+    CallLog.plugin = "cordova-plugin-calllog";
+    CallLog.pluginRef = "plugins.callLog";
+    CallLog.repo = "https://github.com/creacore-team/cordova-plugin-calllog";
+    CallLog.platforms = ["Android"];
+    CallLog = __decorate([
+        Injectable()
+    ], CallLog);
+    return CallLog;
+}(IonicNativePlugin));
+export { CallLog };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGlvbmljLW5hdGl2ZS9wbHVnaW5zL2NhbGwtbG9nL25neC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMzQyxPQUFPLDhCQUFzQyxNQUFNLG9CQUFvQixDQUFDOztJQWlDM0MsMkJBQWlCOzs7O0lBTzVDLDRCQUFVLGFBQUMsT0FBd0I7SUFXbkMsbUNBQWlCO0lBV2pCLHVDQUFxQjs7Ozs7O0lBN0JWLE9BQU87UUFEbkIsVUFBVSxFQUFFO09BQ0EsT0FBTztrQkFsQ3BCO0VBa0M2QixpQkFBaUI7U0FBakMsT0FBTyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgQ29yZG92YSwgSW9uaWNOYXRpdmVQbHVnaW4sIFBsdWdpbiB9IGZyb20gJ0Bpb25pYy1uYXRpdmUvY29yZSc7XHJcblxyXG5leHBvcnQgaW50ZXJmYWNlIENhbGxMb2dPYmplY3Qge1xyXG4gIG5hbWU6IHN0cmluZztcclxuICB2YWx1ZTogc3RyaW5nIHwgc3RyaW5nW107XHJcbiAgb3BlcmF0b3I6ICc9PScgfCAnIT0nIHwgJz4nIHwgJz49JyB8ICc8JyB8ICc8PScgfCAnbGlrZSc7XHJcbn1cclxuXHJcbi8qKlxyXG4gKiBAbmFtZSBDYWxsIExvZ1xyXG4gKiBAZGVzY3JpcHRpb25cclxuICogVGhpcyBwbHVnaW4gYWNjZXNzIHRoZSBjYWxsIGhpc3Rvcnkgb24gYSBkZXZpY2UgYW5kIHRoYXQgY2FuIGJlIGZpbHRlcmVkXHJcbiAqXHJcbiAqIEB1c2FnZVxyXG4gKiBgYGB0eXBlc2NyaXB0XHJcbiAqIGltcG9ydCB7IENhbGxMb2cgfSBmcm9tICdAaW9uaWMtbmF0aXZlL2NhbGwtbG9nL25neCc7XHJcbiAqXHJcbiAqXHJcbiAqIGNvbnN0cnVjdG9yKHByaXZhdGUgY2FsbExvZzogQ2FsbExvZykgeyB9XHJcbiAqXHJcbiAqIGBgYGBcclxuICogQGludGVyZmFjZXNcclxuICogQ2FsbExvZ09iamVjdFxyXG4gKlxyXG4gKi9cclxuQFBsdWdpbih7XHJcbiAgcGx1Z2luTmFtZTogJ0NhbGxMb2cnLFxyXG4gIHBsdWdpbjogJ2NvcmRvdmEtcGx1Z2luLWNhbGxsb2cnLFxyXG4gIHBsdWdpblJlZjogJ3BsdWdpbnMuY2FsbExvZycsXHJcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9jcmVhY29yZS10ZWFtL2NvcmRvdmEtcGx1Z2luLWNhbGxsb2cnLFxyXG4gIHBsYXRmb3JtczogWydBbmRyb2lkJ10sXHJcbn0pXHJcbkBJbmplY3RhYmxlKClcclxuZXhwb3J0IGNsYXNzIENhbGxMb2cgZXh0ZW5kcyBJb25pY05hdGl2ZVBsdWdpbiB7XHJcbiAgLyoqXHJcbiAgICogVGhpcyBmdW5jdGlvbiByZXR1cm4gdGhlIGNhbGwgbG9nc1xyXG4gICAqIEBwYXJhbSB7Q2FsbExvZ09iamVjdFtdfSBmaWx0ZXJzIGFycmF5IG9mIG9iamVjdCB0byBmaWx0ZXIgdGhlIHF1ZXJ5XHJcbiAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fVxyXG4gICAqL1xyXG4gIEBDb3Jkb3ZhKClcclxuICBnZXRDYWxsTG9nKGZpbHRlcnM6IENhbGxMb2dPYmplY3RbXSk6IFByb21pc2U8YW55PiB7XHJcbiAgICByZXR1cm47XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBDaGVjayBwZXJtaXNzaW9uXHJcbiAgICogQHJldHVybnMge1Byb21pc2U8YW55Pn1cclxuICAgKi9cclxuICBAQ29yZG92YSh7XHJcbiAgICBwbGF0Zm9ybXM6IFsnQW5kcm9pZCddLFxyXG4gIH0pXHJcbiAgaGFzUmVhZFBlcm1pc3Npb24oKTogUHJvbWlzZTxhbnk+IHtcclxuICAgIHJldHVybjtcclxuICB9XHJcblxyXG4gIC8qKlxyXG4gICAqIFJlcXVlc3QgcGVybWlzc2lvblxyXG4gICAqIEByZXR1cm5zIHtQcm9taXNlPGFueT59XHJcbiAgICovXHJcbiAgQENvcmRvdmEoe1xyXG4gICAgcGxhdGZvcm1zOiBbJ0FuZHJvaWQnXSxcclxuICB9KVxyXG4gIHJlcXVlc3RSZWFkUGVybWlzc2lvbigpOiBQcm9taXNlPGFueT4ge1xyXG4gICAgcmV0dXJuO1xyXG4gIH1cclxufVxyXG4iXX0=

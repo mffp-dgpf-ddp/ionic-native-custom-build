@@ -1,0 +1,22 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { IonicNativePlugin, cordova } from '@ionic-native/core';
+var Backlight = /** @class */ (function (_super) {
+    __extends(Backlight, _super);
+    function Backlight() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Backlight.prototype.on = function () { return cordova(this, "on", {}, arguments); };
+    Backlight.prototype.off = function () { return cordova(this, "off", {}, arguments); };
+    Backlight.pluginName = "Backlight";
+    Backlight.plugin = "cordova-plugin-backlight";
+    Backlight.pluginRef = "cordova.plugins.Backlight";
+    Backlight.repo = "https://github.com/mebibou/cordova-plugin-backlight";
+    Backlight.platforms = ["Android"];
+    Backlight = __decorate([
+        Injectable()
+    ], Backlight);
+    return Backlight;
+}(IonicNativePlugin));
+export { Backlight };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGlvbmljLW5hdGl2ZS9wbHVnaW5zL2JhY2tsaWdodC9uZ3gvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDM0MsT0FBTyw4QkFBc0MsTUFBTSxvQkFBb0IsQ0FBQzs7SUFnQ3pDLDZCQUFpQjs7OztJQU05QyxzQkFBRTtJQVNGLHVCQUFHOzs7Ozs7SUFmUSxTQUFTO1FBRHJCLFVBQVUsRUFBRTtPQUNBLFNBQVM7b0JBakN0QjtFQWlDK0IsaUJBQWlCO1NBQW5DLFNBQVMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IENvcmRvdmEsIElvbmljTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAaW9uaWMtbmF0aXZlL2NvcmUnO1xyXG5cclxuLyoqXHJcbiAqIEBiZXRhXHJcbiAqIEBuYW1lIEJhY2tsaWdodFxyXG4gKiBAZGVzY3JpcHRpb25cclxuICogVGhpcyBwbHVnaW4gYWRkcyB0dXJuaW5nIG9uL29mZiB0aGUgZGV2aWNlIGJhY2tsaWdodC5cclxuICpcclxuICogQHVzYWdlXHJcbiAqIGBgYHR5cGVzY3JpcHRcclxuICogaW1wb3J0IHsgQmFja2xpZ2h0IH0gZnJvbSAnQGlvbmljLW5hdGl2ZS9iYWNrbGlnaHQvbmd4JztcclxuICpcclxuICogY29uc3RydWN0b3IocHJpdmF0ZSBiYWNrbGlnaHQ6IEJhY2tsaWdodCkgeyB9XHJcbiAqXHJcbiAqIC4uLlxyXG4gKlxyXG4gKiAvLyBUdXJuIGJhY2tsaWdodCBvblxyXG4gKiB0aGlzLmJhY2tsaWdodC5vbigpLnRoZW4oKCkgPT4gY29uc29sZS5sb2coJ2JhY2tsaWdodCBvbicpKTtcclxuICpcclxuICogLy8gVHVybiBiYWNrbGlnaHQgb2ZmXHJcbiAqIHRoaXMuYmFja2xpZ2h0Lm9mZigpLnRoZW4oKCkgPT4gY29uc29sZS5sb2coJ2JhY2tsaWdodCBvZmYnKSk7XHJcbiAqXHJcbiAqIGBgYFxyXG4gKi9cclxuQFBsdWdpbih7XHJcbiAgcGx1Z2luTmFtZTogJ0JhY2tsaWdodCcsXHJcbiAgcGx1Z2luOiAnY29yZG92YS1wbHVnaW4tYmFja2xpZ2h0JyxcclxuICBwbHVnaW5SZWY6ICdjb3Jkb3ZhLnBsdWdpbnMuQmFja2xpZ2h0JyxcclxuICByZXBvOiAnaHR0cHM6Ly9naXRodWIuY29tL21lYmlib3UvY29yZG92YS1wbHVnaW4tYmFja2xpZ2h0JyxcclxuICBwbGF0Zm9ybXM6IFsnQW5kcm9pZCddLFxyXG59KVxyXG5ASW5qZWN0YWJsZSgpXHJcbmV4cG9ydCBjbGFzcyBCYWNrbGlnaHQgZXh0ZW5kcyBJb25pY05hdGl2ZVBsdWdpbiB7XHJcbiAgLyoqXHJcbiAgICogVGhpcyBmdW5jdGlvbiB0dXJucyBiYWNrbGlnaHQgb25cclxuICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59IFJldHVybnMgYSBwcm9taXNlIHRoYXQgcmVzb2x2ZXMgd2hlbiB0aGUgYmFja2xpZ2h0IGlzIG9uXHJcbiAgICovXHJcbiAgQENvcmRvdmEoKVxyXG4gIG9uKCk6IFByb21pc2U8YW55PiB7XHJcbiAgICByZXR1cm47XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBUaGlzIGZ1bmN0aW9uIHR1cm5zIGJhY2tsaWdodCBvZmZcclxuICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59IFJldHVybnMgYSBwcm9taXNlIHRoYXQgcmVzb2x2ZXMgd2hlbiB0aGUgYmFja2xpZ2h0IGlzIG9mZlxyXG4gICAqL1xyXG4gIEBDb3Jkb3ZhKClcclxuICBvZmYoKTogUHJvbWlzZTxhbnk+IHtcclxuICAgIHJldHVybjtcclxuICB9XHJcbn1cclxuIl19
