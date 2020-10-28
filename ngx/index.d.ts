@@ -12,6 +12,10 @@ export interface SQLiteDatabaseConfig {
      * iOS Database Location. Example: 'Library'
      */
     iosDatabaseLocation?: string;
+        /**
+     * Android Database Location. Example: ':Library'
+     */         
+     androidDatabaseLocation?: string;
     /**
      * support opening pre-filled databases with https://github.com/litehelpers/cordova-sqlite-ext
      */
