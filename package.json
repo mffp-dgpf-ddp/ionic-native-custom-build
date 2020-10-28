@@ -1,0 +1,19 @@
+{
+  "name": "ionic-native-custom-build",
+  "version": "1.0.0",
+  "description": "clone temporaire ionic-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mffp-dgpf-ddp/ionic-native-custom-build.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mffp-dgpf-ddp/ionic-native-custom-build/issues"
+  },
+  "homepage": "https://github.com/mffp-dgpf-ddp/ionic-native-custom-build#readme"
+}
